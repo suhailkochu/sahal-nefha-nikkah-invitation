@@ -7,7 +7,10 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const invitationBase = isGitHubPages ? "/sahal-nefha-invitation/" : "/";
+const repoName = process.env.GITHUB_REPOSITORY
+  ? `/${process.env.GITHUB_REPOSITORY.split("/")[1]}/`
+  : "/sahal-nefha-nikkah-invitation/";
+const invitationBase = isGitHubPages ? repoName : "/";
 
 export default defineConfig({
   nitro: { preset: "cloudflare-module" },
