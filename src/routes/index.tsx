@@ -4,7 +4,7 @@ import { ArrowUpRight, Calendar, Clock, MapPin, Phone, Sparkles } from "lucide-r
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import paper from "@/assets/ivory-paper.jpg";
 import seal from "@/assets/bronze-seal.png";
-import oliveFloralBg from "@/assets/olive-floral-bg.jpg";
+import floralInvitationBg from "@/assets/floral-invitation-bg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -290,8 +290,8 @@ function Index() {
         /* STAGE 2: UNFOLDED LUXURY OLIVE FLORAL INVITATION */
         <div className="unfolded-invitation">
           <article className="invitation-card-container">
-            {/* Seamless Olive Botanical Watercolor Backdrop */}
-            <img src={oliveFloralBg} alt="" className="floral-art-img" aria-hidden="true" />
+            {/* Seamless Golden Floral Botanical Watercolor Backdrop */}
+            <img src={floralInvitationBg} alt="" className="floral-art-img" aria-hidden="true" />
 
             {/* Inner Content Layer */}
             <div className="invitation-card-content">
@@ -340,7 +340,7 @@ function Index() {
                 {/* Date */}
                 <div className="trio-item date-trio">
                   <div className="trio-icon-wrap">
-                    <Calendar className="size-4 text-emerald-800" />
+                    <Calendar className="size-4 text-amber-700" />
                   </div>
                   <span className="trio-day">Saturday</span>
                   <span className="trio-date-num">28</span>
@@ -361,7 +361,7 @@ function Index() {
                 {/* Time */}
                 <div className="trio-item time-trio">
                   <div className="trio-icon-wrap">
-                    <Clock className="size-4 text-emerald-800" />
+                    <Clock className="size-4 text-amber-700" />
                   </div>
                   <span className="trio-label">Nikkah Ceremony</span>
                   <span className="trio-time-num">
@@ -374,7 +374,7 @@ function Index() {
                 {/* Venue */}
                 <div className="trio-item venue-trio">
                   <div className="trio-icon-wrap">
-                    <MapPin className="size-4 text-emerald-800" />
+                    <MapPin className="size-4 text-amber-700" />
                   </div>
                   <span className="trio-venue-name">Rixos The Palm</span>
                   <span className="trio-venue-loc">Dubai, United Arab Emirates</span>

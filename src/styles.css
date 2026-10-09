@@ -25,32 +25,32 @@
 }
 
 :root {
-  /* Warm Ivory & Earthy Olive Green Palette */
-  --background: #f4f0e6;
-  --foreground: #2d362c;
-  --primary: #40533c; /* Olive Forest Green */
-  --primary-dark: #202c1e;
-  --primary-light: #5f745a;
-  --muted-foreground: #5a6659;
-  --border: #dcd6c8;
-  --border-subtle: rgba(64, 83, 60, 0.2);
+  /* Royal Golden, Ivory & Warm Beige Palette */
+  --background: #fbf8f2;
+  --foreground: #382d20;
+  --primary: #b38b40; /* Radiant Royal Gold */
+  --primary-dark: #7a5818; /* Deep Antique Burnished Gold */
+  --primary-light: #d4af5c; /* Luminous Warm Gold */
+  --muted-foreground: #786953; /* Elegant Warm Taupe */
+  --border: #e6dcce; /* Delicate Ivory Beige Border */
+  --border-subtle: rgba(179, 139, 64, 0.25);
   
-  /* Natural Sage Envelope */
-  --sage-envelope: #7b8d76;
-  --sage-envelope-dark: #5e6f59;
-  --sage-envelope-light: #8e9e89;
-  --sage-ink: #3c493a;
-  --sage-deboss: #4f5d4c;
-  --emboss-highlight: rgba(255, 255, 255, 0.4);
+  /* Luxurious Warm Beige Stationery Envelope */
+  --sage-envelope: #cbba9e; /* Warm Golden Sand / Camel Beige */
+  --sage-envelope-dark: #b29e7e; /* Fold shadow beige */
+  --sage-envelope-light: #ded0b4; /* Luminous champagne beige flap */
+  --sage-ink: #6d542b; /* Gilded warm bronze ink */
+  --sage-deboss: #7a5f33; /* Debossed warm antique gold */
+  --emboss-highlight: rgba(255, 255, 255, 0.65);
   
-  /* Vintage Warm Olive & Gold */
-  --gold-vintage: #9c824c;
-  --gold-light: #d6be8c;
-  --gold-soft: rgba(156, 130, 76, 0.16);
+  /* Vintage Warm Gold & Champagne */
+  --gold-vintage: #b88f42;
+  --gold-light: #e8cca0;
+  --gold-soft: rgba(184, 143, 66, 0.18);
   
   /* Shadows */
-  --shadow-card: 0 20px 45px -12px rgba(45, 58, 43, 0.18), 0 6px 16px rgba(0, 0, 0, 0.04);
-  --shadow-envelope: 0 22px 40px -12px rgba(45, 58, 43, 0.32), 0 6px 14px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 20px 45px -12px rgba(80, 60, 30, 0.14), 0 6px 16px rgba(0, 0, 0, 0.04);
+  --shadow-envelope: 0 22px 42px -12px rgba(70, 52, 28, 0.28), 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 @layer base {
@@ -92,15 +92,15 @@
   justify-content: center;
   animation: floatEarthy linear infinite;
   color: var(--primary-light);
-  filter: drop-shadow(0 1px 3px rgba(64, 83, 60, 0.2));
+  filter: drop-shadow(0 1px 3px rgba(184, 143, 66, 0.35));
 }
 
 .particle-heart {
-  color: #9cb099;
+  color: #d6be90;
 }
 
 .particle-sparkle {
-  color: #c7b385;
+  color: #dfb14b;
 }
 
 @keyframes floatEarthy {
@@ -134,7 +134,7 @@
   min-height: 100svh;
   overflow-x: hidden;
   isolation: isolate;
-  background: radial-gradient(circle at 50% 15%, #faf8f3 0%, #f4f0e6 60%, #eae5d9 100%);
+  background: radial-gradient(circle at 50% 15%, #fdfbf7 0%, #fbf8f2 55%, #f2ebe0 100%);
 }
 
 .paper-backdrop {
@@ -152,7 +152,7 @@
 .ambient-gradient-overlay {
   position: fixed;
   inset: 0;
-  background: radial-gradient(ellipse at top center, rgba(123, 141, 118, 0.08) 0%, transparent 65%);
+  background: radial-gradient(ellipse at top center, rgba(212, 175, 55, 0.09) 0%, transparent 65%);
   z-index: -1;
   pointer-events: none;
 }
@@ -265,7 +265,7 @@
 .envelope-card-shadow {
   position: absolute;
   inset: 12px;
-  background: rgba(45, 58, 43, 0.22);
+  background: rgba(70, 52, 28, 0.24);
   filter: blur(18px);
   border-radius: 8px;
   transform: translateY(12px);
@@ -396,16 +396,16 @@
   position: absolute;
   inset: 8px 14px;
   z-index: 2;
-  background: #faf8f3 url('./assets/ivory-paper.jpg') center / cover;
+  background: #fdfbf7 url('./assets/ivory-paper.jpg') center / cover;
   border-radius: 3px;
-  border: 1px solid rgba(123, 141, 118, 0.3);
+  border: 1px solid rgba(184, 143, 66, 0.35);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 6px;
   opacity: 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(70, 52, 28, 0.08);
 }
 
 .sliding-bismillah {
@@ -464,7 +464,7 @@
   position: absolute;
   inset: -8px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(162, 142, 102, 0.45) 0%, rgba(123, 141, 118, 0.2) 50%, transparent 75%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.5) 0%, rgba(184, 143, 66, 0.25) 50%, transparent 75%);
   animation: pulseSealGentle 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -483,7 +483,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 6px 12px rgba(45, 58, 43, 0.4));
+  filter: drop-shadow(0 6px 12px rgba(70, 52, 28, 0.38));
   animation: sealGentleBreathe 3s ease-in-out infinite;
   transition: transform 0.3s ease;
 }
@@ -499,7 +499,7 @@
 
 .seal-button:hover .seal-image {
   transform: scale(1.09) rotate(-3deg);
-  filter: drop-shadow(0 8px 16px rgba(45, 58, 43, 0.5));
+  filter: drop-shadow(0 8px 16px rgba(70, 52, 28, 0.48));
 }
 
 .opening .seal-button {
@@ -561,12 +561,12 @@
   font-size: 13.5px;
   font-style: italic;
   letter-spacing: 0.5px;
-  color: var(--primary);
-  background: rgba(250, 248, 243, 0.75);
+  color: var(--primary-dark);
+  background: rgba(253, 251, 247, 0.88);
   padding: 5px 16px;
   border-radius: 20px;
-  border: 1px solid rgba(138, 114, 76, 0.2);
-  box-shadow: 0 2px 8px rgba(45, 58, 43, 0.06);
+  border: 1px solid rgba(184, 143, 66, 0.3);
+  box-shadow: 0 2px 8px rgba(70, 52, 28, 0.08);
   animation: hintFloatPulse 3s ease-in-out infinite;
 }
 
@@ -625,7 +625,7 @@
   box-shadow: var(--shadow-card);
   text-align: center;
   overflow: hidden;
-  background-color: #faf8f3;
+  background-color: #fbf8f2;
   animation: cardSoftReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
@@ -711,7 +711,7 @@
   position: relative;
   z-index: 2;
   padding: 56px 24px 36px;
-  background: radial-gradient(circle at 50% 30%, rgba(250, 248, 243, 0.94) 0%, rgba(250, 248, 243, 0.85) 60%, rgba(250, 248, 243, 0.45) 100%);
+  background: radial-gradient(circle at 50% 30%, rgba(254, 252, 248, 0.94) 0%, rgba(251, 248, 242, 0.86) 60%, rgba(246, 240, 228, 0.52) 100%);
 }
 
 /* Top Announcement */
@@ -719,10 +719,10 @@
   font-family: var(--font-arabic);
   font-size: 21px;
   line-height: 1.5;
-  color: #685532;
+  color: #7a5818;
   margin: 0;
   letter-spacing: 0.5px;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 }
 
 .bismillah-translation {
@@ -744,7 +744,7 @@
 .bismillah-sep-line {
   width: 48px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(138, 114, 76, 0.45), transparent);
+  background: linear-gradient(90deg, transparent, rgba(184, 143, 66, 0.5), transparent);
 }
 
 /* Couple Names in Romantic Cursive Wedding Calligraphy */
@@ -765,7 +765,7 @@
   line-height: 1;
   color: var(--primary-dark);
   letter-spacing: 0.5px;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 2px 6px rgba(45, 58, 43, 0.08);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 2px 6px rgba(70, 52, 28, 0.1);
   display: inline-block;
   will-change: transform, filter;
 }
@@ -787,8 +787,8 @@
   }
   50% {
     transform: translate(-14px, -2px) scale(1.02);
-    filter: drop-shadow(0 3px 8px rgba(64, 83, 60, 0.2));
-    color: #243521;
+    filter: drop-shadow(0 3px 8px rgba(184, 143, 66, 0.25));
+    color: #573e0e;
   }
 }
 
@@ -799,8 +799,8 @@
   }
   50% {
     transform: translate(14px, -2px) scale(1.02);
-    filter: drop-shadow(0 3px 8px rgba(64, 83, 60, 0.2));
-    color: #243521;
+    filter: drop-shadow(0 3px 8px rgba(184, 143, 66, 0.25));
+    color: #573e0e;
   }
 }
 
@@ -808,7 +808,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: var(--primary);
+  background: linear-gradient(135deg, #c59e51 0%, #9a7428 100%);
   color: #fff;
   display: flex;
   align-items: center;
@@ -818,18 +818,18 @@
   font-style: italic;
   margin: -4px 0;
   z-index: 2;
-  box-shadow: 0 2px 5px rgba(32, 44, 30, 0.2);
+  box-shadow: 0 2px 5px rgba(70, 52, 28, 0.25);
   animation: ampersandLivePulse 3.5s ease-in-out infinite;
 }
 
 @keyframes ampersandLivePulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 2px 5px rgba(32, 44, 30, 0.2);
+    box-shadow: 0 2px 5px rgba(70, 52, 28, 0.25);
   }
   50% {
     transform: scale(1.08);
-    box-shadow: 0 3px 10px rgba(64, 83, 60, 0.35);
+    box-shadow: 0 3px 10px rgba(184, 143, 66, 0.4);
   }
 }
 
@@ -845,7 +845,7 @@
   border-bottom: 1px solid var(--border-subtle);
   padding: 12px 6px;
   margin: 12px 0 14px;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.72);
   border-radius: 4px;
   backdrop-filter: blur(2px);
 }
@@ -861,7 +861,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: rgba(64, 83, 60, 0.12);
+  background: rgba(184, 143, 66, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1057,15 +1057,15 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 1px solid var(--border);
-  background: rgba(250, 248, 243, 0.95);
+  border: 1px solid rgba(184, 143, 66, 0.35);
+  background: rgba(253, 251, 247, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
   font-size: 10.5px;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--primary-dark);
   margin: 3px 0;
 }
 
@@ -1225,23 +1225,23 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
-  background: rgba(250, 248, 243, 0.6);
-  border: 1px solid rgba(138, 114, 76, 0.2);
+  background: rgba(254, 252, 248, 0.75);
+  border: 1px solid rgba(184, 143, 66, 0.28);
   border-radius: 4px;
   padding: 3px 8px;
   cursor: pointer;
   color: var(--primary-dark);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 2px rgba(45, 58, 43, 0.03);
+  box-shadow: 0 1px 2px rgba(70, 52, 28, 0.04);
 }
 
 .contact-number-link:hover,
 .contact-number-link[data-state="open"] {
-  background: rgba(250, 248, 243, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-color: var(--primary);
-  color: var(--primary);
+  color: var(--primary-dark);
   transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(45, 58, 43, 0.08);
+  box-shadow: 0 2px 6px rgba(184, 143, 66, 0.2);
 }
 
 .contact-num-digits {
@@ -1250,7 +1250,7 @@
   font-weight: 600;
   letter-spacing: 0.4px;
   text-decoration: underline;
-  text-decoration-color: rgba(45, 58, 43, 0.3);
+  text-decoration-color: rgba(184, 143, 66, 0.45);
   text-underline-offset: 2px;
 }
 
@@ -1266,9 +1266,9 @@
 
 /* Anchored Popover Around the Number */
 .contact-anchored-popover {
-  background: #faf8f3 !important;
-  border: 1px solid rgba(138, 114, 76, 0.35) !important;
-  box-shadow: 0 10px 28px -4px rgba(45, 58, 43, 0.22), 0 4px 10px rgba(0, 0, 0, 0.06) !important;
+  background: #fdfbf7 !important;
+  border: 1px solid rgba(184, 143, 66, 0.35) !important;
+  box-shadow: 0 10px 28px -4px rgba(70, 52, 28, 0.22), 0 4px 10px rgba(0, 0, 0, 0.06) !important;
   border-radius: 8px !important;
   padding: 10px 12px !important;
   width: auto !important;
@@ -1313,12 +1313,12 @@
 }
 
 .call-action-btn {
-  background: var(--primary);
-  color: #faf8f3 !important;
+  background: linear-gradient(135deg, #b38b40 0%, #8f6a24 100%);
+  color: #fff !important;
 }
 
 .call-action-btn:hover {
-  background: var(--primary-dark);
+  background: linear-gradient(135deg, #9a7428 0%, #755416 100%);
   transform: translateY(-1px);
 }
 
@@ -1360,8 +1360,8 @@
     }
     50% {
       transform: translate(-8px, -2px) scale(1.02);
-      filter: drop-shadow(0 3px 8px rgba(64, 83, 60, 0.2));
-      color: #243521;
+      filter: drop-shadow(0 3px 8px rgba(184, 143, 66, 0.25));
+      color: #573e0e;
     }
   }
   @keyframes liveNameBreathingBride {
@@ -1371,8 +1371,8 @@
     }
     50% {
       transform: translate(8px, -2px) scale(1.02);
-      filter: drop-shadow(0 3px 8px rgba(64, 83, 60, 0.2));
-      color: #243521;
+      filter: drop-shadow(0 3px 8px rgba(184, 143, 66, 0.25));
+      color: #573e0e;
     }
   }
   .ampersand-badge {
